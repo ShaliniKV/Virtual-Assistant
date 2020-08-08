@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>com.maven.vmedico</display-name>
+    <servlet>
+    	<servlet-name>LoginDAO</servlet-name>
+    	<servlet-class>com.ag.web.com.maven.vmedico.LoginDAO</servlet-class>
+   	</servlet>
+   	<servlet-mapping>
+    	<servlet-name>LoginDAO</servlet-name>
+    	<url-pattern>/LoginDAO</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>LoginCheck</servlet-name>
+    	<servlet-class>com.ag.web.com.maven.vmedico.LoginCheck</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>LoginCheck</servlet-name>
+    	<url-pattern>/LoginCheck</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<servlet-name>SignUpCheck</servlet-name>
+    	<servlet-class>com.ag.web.com.maven.vmedico.SignUpCheck</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>SignUpCheck</servlet-name>
+    	<url-pattern>/SignUpCheck</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>SignUpDAO</servlet-name>
+    	<servlet-class>com.ag.web.com.maven.vmedico.SignUpDAO</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>SignUpDAO</servlet-name>
+    	<url-pattern>/SignUpDAO</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<servlet-name>ChemistReg</servlet-name>
+    	<servlet-class>com.vmedico.ChemistController.ChemistReg</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>ChemistReg</servlet-name>
+    	<url-pattern>/ChemistReg</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>ChemistRegDB</servlet-name>
+    	<servlet-class>com.vmedico.ChemistDAO.ChemistRegDB</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>ChemistRegDB</servlet-name>
+    	<url-pattern>/ChemistRegDB</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>DoctorReg</servlet-name>
+    	<servlet-class>com.vmedico.DoctorController.DoctorReg</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorReg</servlet-name>
+    	<url-pattern>/DoctorReg</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>DoctorRegDB</servlet-name>
+    	<servlet-class>com.vmedico.DoctorDAO.DoctorRegDB</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorRegDB</servlet-name>
+    	<url-pattern>/DoctorRegDB</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+    	<servlet-name>AddClinic</servlet-name>
+    	<servlet-class>com.vmedico.DoctorController.AddClinic</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>AddClinic</servlet-name>
+    	<url-pattern>/AddClinic</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>AddClinicDB</servlet-name>
+    	<servlet-class>com.vmedico.DoctorDAO.AddClinicDB</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>AddClinicDB</servlet-name>
+    	<url-pattern>/AddClinicDB</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>HealthProfessionalRegDB</servlet-name>
+    	<servlet-class>com.vmedico.HealthProfessionalDAO.HealthProfessionalRegDB</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>HealthProfessionalRegDB</servlet-name>
+    	<url-pattern>/HealthProfessionalRegDB</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    	<servlet-name>HealthProfessionalReg</servlet-name>
+    	<servlet-class>com.vmedico.HealthProfessionalController.HealthProfessionalReg</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>HealthProfessionalReg</servlet-name>
+    	<url-pattern>/HealthProfessionalReg</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>PatientReg</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.PatientReg</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>PatientReg</servlet-name>
+    	<url-pattern>/PatientReg</url-pattern>
+    </servlet-mapping>
+     <servlet>
+    	<servlet-name>PatientRegDB</servlet-name>
+    	<servlet-class>com.vmedico.PatientDAO.PatientRegDB</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>PatientRegDB</servlet-name>
+    	<url-pattern>/PatientRegDB</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>LocationChemist</servlet-name>
+    	<servlet-class>com.vmedico.ChemistController.LocationChemist</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>LocationChemist</servlet-name>
+    	<url-pattern>/LocationChemist</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>PatientMenu</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.PatientMenu</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>PatientMenu</servlet-name>
+    	<url-pattern>/PatientMenu</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>HealthProfessionalMenu</servlet-name>
+    	<servlet-class>com.vmedico.HealthProfessionalController.HealthProfessionalMenu</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>HealthProfessionalMenu</servlet-name>
+    	<url-pattern>/HealthProfessionalMenu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>Index</servlet-name>
+    	<servlet-class>com.ag.web.com.maven.vmedico.Index</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>Index</servlet-name>
+    	<url-pattern>/Index</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>TestingLabSelection</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.TestingLabSelection</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>TestingLabSelection</servlet-name>
+    	<url-pattern>/TestingLabSelection</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>LabDetails</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.LabDetails</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>LabDetails</servlet-name>
+    	<url-pattern>/LabDetails</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>LocationHealthProfessional</servlet-name>
+    	<servlet-class>com.vmedico.HealthProfessionalController.LocationHealthProfessional</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>LocationHealthProfessional</servlet-name>
+    	<url-pattern>/LocationHealthProfessional</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>SpecialitySelection</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.SpecialitySelection</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>SpecialitySelection</servlet-name>
+    	<url-pattern>/SpecialitySelection</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>AdvisorSelection</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.AdvisorSelection</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>AdvisorSelection</servlet-name>
+    	<url-pattern>/AdvisorSelection</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>AdvisorDetails</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.AdvisorDetails</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>AdvisorDetails</servlet-name>
+    	<url-pattern>/AdvisorDetails</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+    	<servlet-name>LocationDoctor</servlet-name>
+    	<servlet-class>com.vmedico.DoctorController.LocationDoctor</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>LocationDoctor</servlet-name>
+    	<url-pattern>/LocationDoctor</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>SpecialitySelection2</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.SpecialitySelection2</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>SpecialitySelection2</servlet-name>
+    	<url-pattern>/SpecialitySelection2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>DoctorSelection</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.DoctorSelection</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorSelection</servlet-name>
+    	<url-pattern>/DoctorSelection</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>DoctorDetails</servlet-name>
+    	<servlet-class>com.vmedico.PatientController.DoctorDetails</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorDetails</servlet-name>
+    	<url-pattern>/DoctorDetails</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ChemistMenu</servlet-name>
+    	<servlet-class>com.vmedico.ChemistController.ChemistMenu</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>ChemistMenu</servlet-name>
+    	<url-pattern>/ChemistMenu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>ChemistProfile</servlet-name>
+    	<servlet-class>com.vmedico.ChemistController.ChemistProfile</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>ChemistProfile</servlet-name>
+    	<url-pattern>/ChemistProfile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>DoctorMenu</servlet-name>
+    	<servlet-class>com.vmedico.DoctorController.DoctorMenu</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorMenu</servlet-name>
+    	<url-pattern>/DoctorMenu</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>DoctorProfile</servlet-name>
+    	<servlet-class>com.vmedico.DoctorController.DoctorProfile</servlet-class>
+   	</servlet>
+    <servlet-mapping>
+    	<servlet-name>DoctorProfile</servlet-name>
+    	<url-pattern>/DoctorProfile</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
